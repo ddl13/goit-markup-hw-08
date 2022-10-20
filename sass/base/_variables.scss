@@ -1,0 +1,21 @@
+/* Palette
+primary white color #FFFFFF
+secondary blue color #2196F3
+black text color for headers #212121
+description text color #757575
+primary black background color #2F303A
+secondary white background color #F5F4FA
+completly dark color #000000
+ */
+
+:root {
+  --primary-color: #ffffff;
+  --secondary-color: #2196f3;
+  --header-text-color: #212121;
+  --description-text-color: #757575;
+  --primary-background-color: #2f303a;
+  --secondary-background-color: #f5f4fa;
+  --dark-logo-color: #000000;
+  --border-color: #eeeeee;
+  --white-transparent-color: rgba(255, 255, 255, 0.6);
+}
