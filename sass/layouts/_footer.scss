@@ -4,6 +4,9 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
+  &__main-footer {
+  }
+
   &__joinUs {
     margin-left: 70px;
   }
@@ -18,8 +21,15 @@
 }
 
 .container-footer {
-  display: flex;
-  align-items: baseline;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    flex-wrap: wrap;
+  }
+
+  @media screen and (min-width: 1200px) {
+    flex-wrap: nowrap;
+  }
 }
 
 .footer-logo {
