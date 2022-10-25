@@ -1,0 +1,106 @@
+.menu-toggle {
+  // margin-left: auto;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
+  border-radius: 50%;
+  outline: none;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 999;
+  padding: 48px 40px;
+  background-color: var(--primary-color);
+
+  transform: translateX(-100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.menu-container.is-open {
+  transform: translateX(0);
+}
+
+.mobile-nav {
+  margin-bottom: 306px;
+
+  &__item:not(:last-child) {
+    margin-bottom: 32px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 1.18;
+    letter-spacing: 0.02em;
+
+    color: var(--header-text-color);
+  }
+
+  &__link.mobile-nav__current {
+    color: var(--secondary-color);
+  }
+}
+
+.mobile-adress {
+  //   &__item + &__item {
+  //     margin-bottom: 32px;
+  //   }
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+
+  &__link--phone {
+    // margin-bottom: 32px;
+
+    font-weight: 500;
+    font-size: 34px;
+    line-height: 1.18;
+
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-color);
+  }
+
+  &__link--gmail {
+    // margin-bottom: 64px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 1.17;
+    letter-spacing: 0.02em;
+
+    color: var(--description-text-color);
+  }
+}
+
+.menu-social-list {
+  margin-top: 64px;
+
+  display: flex;
+  gap: 20px;
+
+  &__link {
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 1.22;
+    letter-spacing: 0.02em;
+
+    color: var(--secondary-color);
+  }
+}

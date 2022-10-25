@@ -4,12 +4,21 @@
 }
 
 .header-logo {
-  color: var(--dark-logo-color);
-
   font-family: "Raleway";
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
+
+  color: var(--dark-logo-color);
+
+  @media screen and (max-width: 767px) {
+    margin: 16px 0;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 
   &__accent {
     color: var(--secondary-color);
@@ -28,7 +37,16 @@
   &__list {
     display: flex;
     align-items: center;
-    margin-left: 93px;
+    margin-left: 88px;
+    // margin-right: 90px;
+
+    @media screen and (min-width: 1200px) {
+      margin-left: 93px;
+    }
+
+    @media screen and (max-width: 767px) {
+      display: none;
+    }
   }
 
   &__item:not(:last-child) {
@@ -78,6 +96,15 @@
   align-items: center;
   display: flex;
   margin-left: auto;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+
+  @media only screen and (max-width: 1199.98px) and (min-width: 768px) {
+    flex-direction: column;
+    gap: 10px;
+  }
 
   &__item + &__item {
     margin-left: 50px;
