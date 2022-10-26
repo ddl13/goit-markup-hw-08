@@ -41,6 +41,11 @@
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1),
     opacity 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
+  @media screen and (min-width: 380px) {
+    width: 370px;
+    height: 609px;
+  }
+
   @media screen and (min-width: 1200px) {
     width: 528px;
     height: 581px;
@@ -216,6 +221,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    @media screen and (min-width: 380px) {
+      font-size: 9px;
+      line-height: 1.17;
+    }
 
     @media screen and (min-width: 1200px) {
       font-size: 14px;
