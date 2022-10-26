@@ -1085,11 +1085,22 @@ img {
   gap: 20px;
 }
 .menu-social-list__link {
+  position: relative;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.22;
   letter-spacing: 0.02em;
   color: var(--secondary-color);
+}
+.menu-social-list__link::after {
+  position: absolute;
+  top: 0;
+  right: 10px;
+  width: 22px;
+  height: 1px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 
 .backdrop {
