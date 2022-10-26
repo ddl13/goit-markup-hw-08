@@ -69,10 +69,18 @@
     <main>
       <!--Hero-->
       <section class="hero-page overlay">
-        <h1 class="hero-page__header">Ефективні рішення для вашого бізнесу</h1>
-        <button data-modal-open type="button" class="hero-page__button button">
-          Замовити послугу
-        </button>
+        <div class="hero-page__container">
+          <h1 class="hero-page__header">
+            Ефективні рішення для вашого бізнесу
+          </h1>
+          <button
+            data-modal-open
+            type="button"
+            class="hero-page__button button"
+          >
+            Замовити послугу
+          </button>
+        </div>
       </section>
       <!--About company-->
       <section class="section about-company">
@@ -602,7 +610,7 @@
         <div class="mailing-list">
           <strong class="page-footer__strong">Підпишіться на розсилку</strong>
           <div>
-            <form action="" class="mailing-list__wrapper">
+            <form class="mailing-list__wrapper">
               <input
                 type="email"
                 name="mailing-email"
@@ -630,7 +638,7 @@
           </svg>
         </button>
         <h2 class="modal__title">Залиште свої дані, ми вам передзвонимо</h2>
-        <form action="" class="modal-form">
+        <form class="modal-form">
           <div class="modal-form__form-element">
             <label for="name" class="modal-form__label">Ім'я</label>
             <div class="modal-form__input-wrap">
@@ -732,6 +740,7 @@
           </li>
         </ul>
       </nav>
+
       <ul class="mobile-adress">
         <li class="mobile-adress__item">
           <a

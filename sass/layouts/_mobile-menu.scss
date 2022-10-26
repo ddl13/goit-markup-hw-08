@@ -36,7 +36,7 @@
 }
 
 .mobile-nav {
-  margin-bottom: 306px;
+  // margin-bottom: 306px;
 
   &__item:not(:last-child) {
     margin-bottom: 32px;
@@ -55,6 +55,12 @@
     color: var(--secondary-color);
   }
 }
+
+// .adress-social-container {
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: flex-end;
+// }
 
 .mobile-adress {
   display: flex;
@@ -85,6 +91,7 @@
 
 .menu-social-list {
   margin-top: 64px;
+  flex-wrap: wrap;
 
   display: flex;
   gap: 20px;

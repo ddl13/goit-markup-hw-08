@@ -25,6 +25,7 @@
 
     @media screen and (min-width: 1200px) {
       text-align: left;
+      margin-bottom: 0;
     }
   }
 
@@ -74,6 +75,10 @@
 .footer-address {
   line-height: 1.71;
   margin-bottom: 60px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+  }
 
   &__list {
     display: flex;
