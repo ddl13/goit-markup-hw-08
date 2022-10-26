@@ -99,9 +99,8 @@
     color: var(--secondary-color);
   }
 
-  &__link::after {
-    border-right: 1 solid rgba(33, 33, 33, 0.2);
-    width: 22px;
-    transform: rotate(90deg);
+  &__item:not(:last-child) {
+    border-right: 1px solid rgba(33, 33, 33, 0.2);
+    padding-right: 10px;
   }
 }
