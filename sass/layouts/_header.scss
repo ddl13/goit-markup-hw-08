@@ -96,6 +96,7 @@
   align-items: center;
   display: flex;
   margin-left: auto;
+  align-items: flex-start;
 
   @media screen and (max-width: 767px) {
     display: none;
@@ -106,8 +107,10 @@
     gap: 10px;
   }
 
-  &__item + &__item {
-    margin-left: 50px;
+  @media screen and (min-width: 1200px) {
+    &__item + &__item {
+      margin-left: 50px;
+    }
   }
 
   &__link {
