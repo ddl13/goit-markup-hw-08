@@ -1093,12 +1093,8 @@ img {
   color: var(--secondary-color);
 }
 .menu-social-list__link::after {
-  position: absolute;
-  top: 0;
-  right: 10px;
+  border-right: 1 solid rgba(33, 33, 33, 0.2);
   width: 22px;
-  height: 1px;
-  border: 1px solid rgba(33, 33, 33, 0.2);
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
 }
