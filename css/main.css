@@ -557,7 +557,7 @@ img {
 }
 @media screen and (min-width: 1200px) {
   .hero-page__header {
-    width: 696px;
+    max-width: 696px;
     font-size: 44px;
     line-height: 1.36;
   }
